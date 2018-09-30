@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.coderqian.chapter2.MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/jumpLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线性布局1" />
+
+        <Button
+            android:id="@+id/jumpLinear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线性布局2" />
+
+        <Button
+            android:id="@+id/jumpLinear3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="线性布局3" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/jumpTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="表格布局" />
+
+    <Button
+        android:id="@+id/jumpRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="相对布局" />
+
+
+</LinearLayout>
