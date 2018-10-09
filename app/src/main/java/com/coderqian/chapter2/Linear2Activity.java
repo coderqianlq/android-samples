@@ -6,6 +6,8 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ProgressBar;
 
+import com.coderqian.R;
+
 /**
  * @author qianliqing
  * @since 2018-09-30 下午2:32

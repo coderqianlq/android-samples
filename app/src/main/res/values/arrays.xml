@@ -7,4 +7,13 @@
         <item>Go</item>
         <item>JavaScript</item>
     </string-array>
+
+    <string-array name="clazz">
+        <item>软件工程1801</item>
+        <item>软件工程1802</item>
+        <item>软件工程1803</item>
+        <item>软件工程1804</item>
+        <item>软件工程1805</item>
+        <item>软件工程1806</item>
+    </string-array>
 </resources>

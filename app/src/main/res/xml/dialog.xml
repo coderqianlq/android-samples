@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="个人信息填写">
+        <EditTextPreference
+            android:dialogIcon="@drawable/phone"
+            android:icon="@drawable/phone"
+            android:key="phone"
+            android:summary="请输入手机号码"
+            android:title="手机号码">
+
+        </EditTextPreference>
+        <ListPreference
+            android:dialogIcon="@drawable/clazz"
+            android:dialogTitle="选择班级"
+            android:entries="@array/clazz"
+            android:entryValues="@array/clazz"
+            android:icon="@drawable/clazz"
+            android:key="clazz"
+            android:summary="请选择班级"
+            android:title="选择班级">
+
+        </ListPreference>
+        <MultiSelectListPreference
+            android:dialogIcon="@drawable/language"
+            android:dialogTitle="选择语言"
+            android:entries="@array/languages"
+            android:entryValues="@array/languages"
+            android:icon="@drawable/language"
+            android:key="languages"
+            android:summary="请选择您擅长的编程语言(可多选)"
+            android:title="选择语言">
+
+        </MultiSelectListPreference>
+        <RingtonePreference
+            android:dialogIcon="@drawable/ring"
+            android:icon="@drawable/ring"
+            android:key="ring_key"
+            android:ringtoneType="all"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="铃声">
+
+        </RingtonePreference>
+    </PreferenceCategory>
+</PreferenceScreen>

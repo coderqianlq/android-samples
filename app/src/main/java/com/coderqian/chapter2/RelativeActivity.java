@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ViewFlipper;
 
+import com.coderqian.R;
+
 /**
  * @author qianliqing
  * @since 2018-09-30 下午4:00

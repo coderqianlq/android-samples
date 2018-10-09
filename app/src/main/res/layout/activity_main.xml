@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.coderqian.chapter2.MainActivity">
+    tools:context="com.coderqian.MainActivity">
 
     <TableRow
         android:layout_width="match_parent"
@@ -41,5 +41,40 @@
         android:layout_height="wrap_content"
         android:text="相对布局" />
 
+    <Button
+        android:id="@+id/jumpTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TabActivity" />
+
+    <Button
+        android:id="@+id/jumpList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListActivity" />
+
+    <Button
+        android:id="@+id/jumpPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PreferenceActivity" />
+
+    <Button
+        android:id="@+id/jumpLauncher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LauncherActivity" />
+
+    <Button
+        android:id="@+id/jumpExpandableList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExpandableListActivity" />
+
+    <Button
+        android:id="@+id/jumpDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框" />
 
 </LinearLayout>

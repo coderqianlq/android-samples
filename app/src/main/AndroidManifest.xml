@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.coderqian.chapter2">
+    package="com.coderqian">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,7 @@
         </activity>
 
         <activity
-            android:name=".LinearActivity"
+            android:name=".chapter2.LinearActivity"
             android:label="线性布局1 AdapterView">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -28,7 +28,7 @@
         </activity>
 
         <activity
-            android:name=".TableActivity"
+            android:name=".chapter2.TableActivity"
             android:label="表格布局 TextView/ImageView">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -38,7 +38,7 @@
         </activity>
 
         <activity
-            android:name=".Linear2Activity"
+            android:name=".chapter2.Linear2Activity"
             android:label="线性布局2 ProgressBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -48,7 +48,7 @@
         </activity>
 
         <activity
-            android:name=".RelativeActivity"
+            android:name=".chapter2.RelativeActivity"
             android:label="相对布局 ViewAnimator">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -58,8 +58,68 @@
         </activity>
 
         <activity
-            android:name=".Linear3Activity"
+            android:name=".chapter2.Linear3Activity"
             android:label="线性布局3 DatePicker/TimePicker">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.Tab2Activity"
+            android:label="TabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.List2Activity"
+            android:label="ListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.Preference2Activity"
+            android:label="PreferenceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.Launcher2Activity"
+            android:label="LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.ExpandableList2Activity"
+            android:label="ExpandableListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter3.DialogActivity"
+            android:label="DialogActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

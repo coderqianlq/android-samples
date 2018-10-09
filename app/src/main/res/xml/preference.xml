@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="无线和网络设置">
+        <SwitchPreference
+            android:icon="@drawable/fly"
+            android:key="apply_fly"
+            android:summary="禁用所有无线连接"
+            android:title="飞行模式">
+
+        </SwitchPreference>
+        <SwitchPreference
+            android:icon="@drawable/internet"
+            android:key="apply_internet"
+            android:summary="禁用通过USB共享Internet连接"
+            android:title="Internet共享">
+
+        </SwitchPreference>
+        <SwitchPreference
+            android:icon="@drawable/wifi"
+            android:key="apply_wifi"
+            android:summary="打开Wi-Fi"
+            android:title="Wi-Fi">
+
+        </SwitchPreference>
+        <Preference
+            android:dependency="apply_wifi"
+            android:key="wifi_setting"
+            android:summary="设置和管理无线接入点"
+            android:title="Wi-Fi设置">
+
+        </Preference>
+        <SwitchPreference
+            android:icon="@drawable/bluetooth"
+            android:key="apply_bluetooth"
+            android:summary="启用蓝牙"
+            android:title="蓝牙">
+
+        </SwitchPreference>
+
+        <Preference
+            android:dependency="apply_bluetooth"
+            android:key="bluetooth_setting"
+            android:summary="管理连接、设备设备名称和可检测性"
+            android:title="蓝牙设置">
+
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
