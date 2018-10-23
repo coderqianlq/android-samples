@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">chapter2</string>
+
+    <string name="clothes">服饰</string>
+    <string name="snacks">零食</string>
+    <string name="electric">电器</string>
+
+    <string name="button">更换</string>
+
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
 </resources>

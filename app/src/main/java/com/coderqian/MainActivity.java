@@ -1,6 +1,7 @@
 package com.coderqian;
 
 import android.content.Intent;
+import com.coderqian.chapter4.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
         Button dialog = findViewById(R.id.jumpDialog);
         dialog.setOnClickListener(new ButtonListener(DialogActivity.class));
+
+        Button fragment = findViewById(R.id.jumpFragment);
+        fragment.setOnClickListener(new ButtonListener(FragmentActivity.class));
     }
 
 
