@@ -19,6 +19,8 @@ import com.coderqian.chapter3.Launcher2Activity;
 import com.coderqian.chapter3.List2Activity;
 import com.coderqian.chapter3.Preference2Activity;
 import com.coderqian.chapter3.Tab2Activity;
+import com.coderqian.chapter4.Test2Activity;
+import com.coderqian.chapter4.TestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button fragment = findViewById(R.id.jumpFragment);
         fragment.setOnClickListener(new ButtonListener(FragmentActivity.class));
+
+        Button test = findViewById(R.id.jumpTest);
+        test.setOnClickListener(new ButtonListener(TestActivity.class));
+
+        Button test2 = findViewById(R.id.jumpTest2);
+        test2.setOnClickListener(new ButtonListener(Test2Activity.class));
     }
 
 

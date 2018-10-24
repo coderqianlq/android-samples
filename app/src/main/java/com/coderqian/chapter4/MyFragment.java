@@ -1,5 +1,6 @@
 package com.coderqian.chapter4;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,7 @@ public class MyFragment extends Fragment {
         super();
     }
 
+    @SuppressLint("ValidFragment")
     public MyFragment(String content) {
         this.content = content;
     }

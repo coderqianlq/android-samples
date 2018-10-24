@@ -19,46 +19,46 @@ import com.coderqian.R;
  */
 public class FragmentActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private TextView channel;
-    private TextView message;
-    private TextView better;
-    private TextView setting;
+    private TextView chat;
+    private TextView friend;
+    private TextView find;
+    private TextView account;
     private FrameLayout content;
 
     //Fragment Object
     private MyFragment fg1, fg2, fg3, fg4;
-    private FragmentManager fManager;
+    private FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_tab);
-        fManager = getFragmentManager();
+        manager = getFragmentManager();
         bindViews();
-        channel.performClick();   //模拟一次点击，既进去后选择第一项
+        chat.performClick();   //模拟一次点击，既进去后选择第一项
     }
 
     //UI组件初始化与事件绑定
     private void bindViews() {
-        channel = findViewById(R.id.channel);
-        message = findViewById(R.id.message);
-        better = findViewById(R.id.better);
-        setting = findViewById(R.id.setting);
+        chat = findViewById(R.id.chat);
+        friend = findViewById(R.id.friend);
+        find = findViewById(R.id.find);
+        account = findViewById(R.id.account);
         content = findViewById(R.id.content);
 
-        channel.setOnClickListener(this);
-        message.setOnClickListener(this);
-        better.setOnClickListener(this);
-        setting.setOnClickListener(this);
+        chat.setOnClickListener(this);
+        friend.setOnClickListener(this);
+        find.setOnClickListener(this);
+        account.setOnClickListener(this);
     }
 
     //重置所有文本的选中状态
     private void setSelected() {
-        channel.setSelected(false);
-        message.setSelected(false);
-        better.setSelected(false);
-        setting.setSelected(false);
+        chat.setSelected(false);
+        friend.setSelected(false);
+        find.setSelected(false);
+        account.setSelected(false);
     }
 
     //隐藏所有Fragment
@@ -72,12 +72,12 @@ public class FragmentActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        FragmentTransaction fTransaction = fManager.beginTransaction();
+        FragmentTransaction fTransaction = manager.beginTransaction();
         hideAllFragment(fTransaction);
         switch (v.getId()) {
-            case R.id.channel:
+            case R.id.chat:
                 setSelected();
-                channel.setSelected(true);
+                chat.setSelected(true);
                 if (fg1 == null) {
                     fg1 = new MyFragment("第一个Fragment");
                     fTransaction.add(R.id.content, fg1);
@@ -85,9 +85,9 @@ public class FragmentActivity extends AppCompatActivity implements View.OnClickL
                     fTransaction.show(fg1);
                 }
                 break;
-            case R.id.message:
+            case R.id.friend:
                 setSelected();
-                message.setSelected(true);
+                friend.setSelected(true);
                 if (fg2 == null) {
                     fg2 = new MyFragment("第二个Fragment");
                     fTransaction.add(R.id.content, fg2);
@@ -95,9 +95,9 @@ public class FragmentActivity extends AppCompatActivity implements View.OnClickL
                     fTransaction.show(fg2);
                 }
                 break;
-            case R.id.better:
+            case R.id.find:
                 setSelected();
-                better.setSelected(true);
+                find.setSelected(true);
                 if (fg3 == null) {
                     fg3 = new MyFragment("第三个Fragment");
                     fTransaction.add(R.id.content, fg3);
@@ -105,9 +105,9 @@ public class FragmentActivity extends AppCompatActivity implements View.OnClickL
                     fTransaction.show(fg3);
                 }
                 break;
-            case R.id.setting:
+            case R.id.account:
                 setSelected();
-                setting.setSelected(true);
+                account.setSelected(true);
                 if (fg4 == null) {
                     fg4 = new MyFragment("第四个Fragment");
                     fTransaction.add(R.id.content, fg4);

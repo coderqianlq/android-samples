@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">chapter2</string>
+    <string name="app_name">Android Homework</string>
 
     <string name="clothes">服饰</string>
     <string name="snacks">零食</string>
@@ -7,8 +7,69 @@
 
     <string name="button">更换</string>
 
-    <string name="tab_menu_alert">提醒</string>
-    <string name="tab_menu_profile">信息</string>
-    <string name="tab_menu_pay">我的</string>
-    <string name="tab_menu_setting">设置</string>
+    <string name="chat">聊天</string>
+    <string name="friend">好友</string>
+    <string name="find">发现</string>
+    <string name="account">我</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="homework">
+        <item>搭建Android应用开发环境</item>
+        <item>练习Android控件的使用</item>
+        <item>熟悉Android事件处理机制</item>
+        <item>练习Fragment、Intent和各种资源的使用</item>
+        <item>实现几种绘图和动画效果</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+    </string-array>
+
+    <string-array name="homework_list">
+        <item>用AndroidStudio创建第一个Android应用</item>
+        <item>编写一个Android应用，练习各种Android控件的使用</item>
+        <item>熟悉Android事件处理机制、Activity及其子类</item>
+        <item>新建一个项目，练习Fragment、Intent和各种资源的使用</item>
+        <item>新建一个项目，练习各种资源的使用，并实现几种绘图和动画效果</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+    </string-array>
+
+    <string-array name="homework_detail">
+        <item>下载Android Studio，搭建Android应用开发环境，熟悉基本Android开发、调试工具。用AndroidStudio创建第一个Android应用，对该应用进行签名，并能把该应用部署至Android模拟器、GenyMotion模拟器和真机上。</item>
+        <item>1、参照chapter2实验手册，完成上机实验。\n2、编写一个Android应用，练习各种Android控件的使用，该应用可以是单机应用，无需添加网络访问功能。可模仿常用的工具类应用或热门应用的界面来完成自己应用界面的布局。要求下列每一组组件都要用到，每一组组件至少使用其中一种组件。\n
+              1）布局管理器 \n
+              2）TextView及其子类 \n
+              3）ImageView及其子类 \n
+              4) AdapterView及其子类 \n
+              5）ProgressBar及其子类 \n
+              6）ViewAnimator及其子类 \n
+              7）各种杂项组件 \n
+              8）对话框</item>
+        <item>1、参照chapter3实验手册，完成上机实验。\n2、熟悉Android事件处理机制、Activity及其子类，写一个实验应用，要求：\n
+            1）包含多个Activity，并至少使用TabActivity、PreferenceActivity、ListActivity、LauncherActivity、ExpandableListActivity中的两种。\n
+            2）该应用要包含菜单、对话框、Toast消息提醒。\n
+            3）向该应用中添加事件处理代码。</item>
+        <item>1、参照chapter4、chapter5、chapter6实验手册，完成上机实验。\n2、新建一个项目，练习Fragment、Intent和各种资源的使用。</item>
+        <item>1、参照chapter6、chapter7实验手册，完成上机实验。\n2、新建一个项目，练习各种资源的使用，并实现几种绘图和动画效果。</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+        <item>暂无</item>
+    </string-array>
+
+    <string-array name="chapter1">
+        <item>1,2</item>
+        <item>3,4</item>
+    </string-array>
+
+    <string-array name="chapter2">
+        <item>4,5</item>
+        <item>5,6</item>
+    </string-array>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#000000</color>
-    <color name="white">#FFFFFF</color>
+    <color name="white">#ffffff</color>
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
@@ -10,5 +10,5 @@
     <color name="topBar">#C4C4C4</color>
 
     <color name="yellow">#FFC800</color>
-    <color name="gray">#8D7A71</color>
+    <color name="green">#1afa29</color>
 </resources>
