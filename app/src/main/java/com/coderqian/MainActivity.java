@@ -1,92 +1,69 @@
 package com.coderqian;
 
-import android.content.Intent;
-import com.coderqian.chapter4.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.BaseAdapter;
+import android.widget.Toast;
 
-import com.coderqian.chapter2.Linear2Activity;
-import com.coderqian.chapter2.Linear3Activity;
-import com.coderqian.chapter2.LinearActivity;
-import com.coderqian.chapter2.RelativeActivity;
-import com.coderqian.chapter2.TableActivity;
-import com.coderqian.chapter3.DialogActivity;
-import com.coderqian.chapter3.ExpandableList2Activity;
-import com.coderqian.chapter3.Launcher2Activity;
-import com.coderqian.chapter3.List2Activity;
-import com.coderqian.chapter3.Preference2Activity;
-import com.coderqian.chapter3.Tab2Activity;
-import com.coderqian.chapter4.Test2Activity;
-import com.coderqian.chapter4.TestActivity;
+import com.yalantis.euclid.library.EuclidActivity;
+import com.yalantis.euclid.library.EuclidListAdapter;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class MainActivity extends EuclidActivity {
+
+    private String[] strings = {"",
+            "com.coderqian.chapter2.LinearActivity,com.coderqian.chapter2.Linear2Activity,com.coderqian.chapter2.Linear3Activity,com.coderqian.chapter2.RelativeActivity,com.coderqian.chapter2.TableActivity",
+            "com.coderqian.chapter3.Tab2Activity,com.coderqian.chapter3.DialogActivity,com.coderqian.chapter3.ExpandableList2Activity,com.coderqian.chapter3.Launcher2Activity,com.coderqian.chapter3.List2Activity,com.coderqian.chapter3.Preference2Activity",
+            "com.coderqian.chapter4.FragmentActivity", "", "", "", "", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        Button linear = findViewById(R.id.jumpLinear);
-        linear.setOnClickListener(new ButtonListener(LinearActivity.class));
-
-        Button linear2 = findViewById(R.id.jumpLinear2);
-        linear2.setOnClickListener(new ButtonListener(Linear2Activity.class));
-
-        Button linear3 = findViewById(R.id.jumpLinear3);
-        linear3.setOnClickListener(new ButtonListener(Linear3Activity.class));
-
-        Button table = findViewById(R.id.jumpTable);
-        table.setOnClickListener(new ButtonListener(TableActivity.class));
-
-        Button relative = findViewById(R.id.jumpRelative);
-        relative.setOnClickListener(new ButtonListener(RelativeActivity.class));
-
-        Button tab = findViewById(R.id.jumpTab);
-        tab.setOnClickListener(new ButtonListener(Tab2Activity.class));
-
-        Button preference = findViewById(R.id.jumpPreference);
-        preference.setOnClickListener(new ButtonListener(Preference2Activity.class));
-
-        Button launcher = findViewById(R.id.jumpLauncher);
-        launcher.setOnClickListener(new ButtonListener(Launcher2Activity.class));
-
-        Button expandable = findViewById(R.id.jumpExpandableList);
-        expandable.setOnClickListener(new ButtonListener(ExpandableList2Activity.class));
-
-        Button list = findViewById(R.id.jumpList);
-        list.setOnClickListener(new ButtonListener(List2Activity.class));
-
-        Button dialog = findViewById(R.id.jumpDialog);
-        dialog.setOnClickListener(new ButtonListener(DialogActivity.class));
-
-        Button fragment = findViewById(R.id.jumpFragment);
-        fragment.setOnClickListener(new ButtonListener(FragmentActivity.class));
-
-        Button test = findViewById(R.id.jumpTest);
-        test.setOnClickListener(new ButtonListener(TestActivity.class));
-
-        Button test2 = findViewById(R.id.jumpTest2);
-        test2.setOnClickListener(new ButtonListener(Test2Activity.class));
+        mButtonProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Oh hi, CoderQian!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
+    @Override
+    protected BaseAdapter getAdapter() {
+        Map<String, Object> profileMap;
+        List<Map<String, Object>> profilesList = new ArrayList<>();
 
-    class ButtonListener implements OnClickListener {
+        int[] chapters = {
+                R.drawable.chapter1,
+                R.drawable.chapter2,
+                R.drawable.chapter3,
+                R.drawable.chapter4,
+                R.drawable.chapter5,
+                R.drawable.chapter6,
+                R.drawable.chapter7,
+                R.drawable.chapter8,
+                R.drawable.chapter9};
+        String[] homework = getResources().getStringArray(R.array.homework);
+        String[] homeworkList = getResources().getStringArray(R.array.homework_list);
+        String[] homeworkDetail = getResources().getStringArray(R.array.homework_detail);
 
-        private Class clazz;
+        for (int i = 0; i < chapters.length; i++) {
+            String[] content = strings[i].split(",");
 
-        ButtonListener(Class clazz) {
-            this.clazz = clazz;
+            profileMap = new HashMap<>();
+            profileMap.put(EuclidListAdapter.KEY_AVATAR, chapters[i]);
+            profileMap.put(EuclidListAdapter.KEY_NAME, homework[i]);
+            profileMap.put(EuclidListAdapter.KEY_DESCRIPTION_SHORT, homeworkList[i]);
+            profileMap.put(EuclidListAdapter.KEY_DESCRIPTION_FULL, homeworkDetail[i]);
+            profileMap.put(EuclidListAdapter.KEY_HOMEWORK_URL, content);
+            profilesList.add(profileMap);
         }
 
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent();
-            intent.setClass(MainActivity.this, clazz);
-            startActivity(intent);
-        }
+        return new EuclidListAdapter(this, R.layout.list_item, profilesList);
     }
 }
 

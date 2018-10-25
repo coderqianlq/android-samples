@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.RectF;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
@@ -175,9 +176,23 @@ public abstract class EuclidActivity extends Activity {
 
         setProfileDetailsInfo(item);
 
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.clazz_item, (String[]) item.get(EuclidListAdapter.KEY_HOMEWORK_URL));
+        final ArrayAdapter<String> adapter = new ArrayAdapter<>(view.getContext(), R.layout.clazz_item, (String[]) item.get(EuclidListAdapter.KEY_HOMEWORK_URL));
         mListViewHomework.setAdapter(adapter);
+
+        mListViewHomework.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                System.out.println((String) adapterView.getItemAtPosition(i));
+                try {
+                    Intent intent = new Intent();
+                    System.out.println(Class.forName((String) adapterView.getItemAtPosition(i)).getClass());
+                    intent.setClass(EuclidActivity.this, Class.forName((String) adapterView.getItemAtPosition(i)));
+                    startActivity(intent);
+                } catch (ClassNotFoundException e) {
+
+                }
+            }
+        });
 
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         params.topMargin = view.getTop() + mToolbar.getHeight();
