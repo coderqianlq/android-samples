@@ -55,13 +55,10 @@
         <item>暂无</item>
     </string-array>
 
-    <string-array name="chapter1">
-        <item>1,2</item>
-        <item>3,4</item>
-    </string-array>
-
-    <string-array name="chapter2">
-        <item>4,5</item>
-        <item>5,6</item>
-    </string-array>
+    <string name="current_mplitude">Modify amplitude, current: %1$s</string>
+    <string name="current_Disparity">Modify amplitude gap, current: %1$s</string>
+    <string name="current_float_time">Modify movement speed, current: %1$s</string>
+    <string name="current_rotate_time">Modify rotation speed, current: %1$s</string>
+    <string name="delete_progress_btn_text">Clean up progress</string>
+    <string name="increase_the_progress_btn_text">Increase the progress： </string>
 </resources>
