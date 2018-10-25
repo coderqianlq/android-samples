@@ -138,7 +138,25 @@
         </activity>
 
         <activity
-            android:name=".chapter4.TestActivity">
+            android:name=".chapter4.Fragment2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter4.IntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".chapter4.AnimatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

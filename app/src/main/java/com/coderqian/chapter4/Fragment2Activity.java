@@ -31,7 +31,7 @@ import yalantis.com.sidemenu.util.ViewAnimator;
  * @since 2018-10-23 下午10:45
  * mail: qianlq0824@gmail.com
  */
-public class TestActivity extends AppCompatActivity implements ViewAnimator.ViewAnimatorListener {
+public class Fragment2Activity extends AppCompatActivity implements ViewAnimator.ViewAnimatorListener {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
@@ -45,7 +45,7 @@ public class TestActivity extends AppCompatActivity implements ViewAnimator.View
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_fragment_2);
         contentFragment = ContentFragment.newInstance(R.drawable.content_music);
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, contentFragment)
