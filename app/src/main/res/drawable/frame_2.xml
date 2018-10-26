@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/wifi_6"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/wifi_5"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/wifi_4"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/wifi_4"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/wifi_2"
+        android:duration="150"></item>
+    <item
+        android:drawable="@drawable/wifi_1"
+        android:duration="150"></item>
+
+</animation-list>
