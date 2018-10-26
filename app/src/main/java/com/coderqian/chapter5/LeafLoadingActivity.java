@@ -8,12 +8,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
-import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.coderqian.R;
+import com.coderqian.chapter5.util.AnimationUtils;
 
 import java.util.Random;
 

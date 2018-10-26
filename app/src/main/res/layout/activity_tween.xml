@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/translate_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="移动动画-Java代码" />
+
+    <Button
+        android:id="@+id/translate_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate_1"
+        android:layout_marginTop="20dp"
+        android:text="移动动画-XML动画效果" />
+
+    <Button
+        android:id="@+id/scale_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate_2"
+        android:layout_marginTop="20dp"
+        android:text="缩放动画-Java代码" />
+
+    <Button
+        android:id="@+id/scale_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scale_1"
+        android:layout_marginTop="20dp"
+        android:text="缩放动画-XML动画效果" />
+
+    <Button
+        android:id="@+id/rotate_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scale_2"
+        android:layout_marginTop="20dp"
+        android:text="旋转动画-Java代码" />
+
+    <Button
+        android:id="@+id/rotate_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rotate_1"
+        android:layout_marginTop="20dp"
+        android:text="旋转动画-XML动画效果" />
+
+    <Button
+        android:id="@+id/alpha_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rotate_2"
+        android:layout_marginTop="20dp"
+        android:text="透明动画-Java代码" />
+
+    <Button
+        android:id="@+id/alpha_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alpha_1"
+        android:layout_marginTop="10dp"
+        android:text="透明动画-XML动画效果" />
+
+    <Button
+        android:id="@+id/set_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alpha_2"
+        android:layout_marginTop="30dp"
+        android:text="组合动画-Java代码" />
+
+    <Button
+        android:id="@+id/set_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_1"
+        android:layout_marginTop="30dp"
+        android:text="组合动画-XML动画效果" />
+</RelativeLayout>

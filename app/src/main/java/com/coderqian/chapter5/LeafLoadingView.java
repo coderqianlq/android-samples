@@ -13,6 +13,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.coderqian.R;
+import com.coderqian.chapter5.util.UiUtils;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,7 +21,7 @@ import java.util.Random;
 
 /**
  * @author qianliqing
- * @since 2018-10-26 上午112:02
+ * @since 2018-10-26 上午12:02
  * mail: qianlq0824@gmail.com
  */
 public class LeafLoadingView extends View {

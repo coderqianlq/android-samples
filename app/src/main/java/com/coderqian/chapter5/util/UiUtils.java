@@ -1,4 +1,4 @@
-package com.coderqian.chapter5;
+package com.coderqian.chapter5.util;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

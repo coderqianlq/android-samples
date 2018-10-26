@@ -19,7 +19,7 @@ public class MainActivity extends EuclidActivity {
             "com.coderqian.chapter2.LinearActivity,com.coderqian.chapter2.Linear2Activity,com.coderqian.chapter2.Linear3Activity,com.coderqian.chapter2.RelativeActivity,com.coderqian.chapter2.TableActivity",
             "com.coderqian.chapter3.Tab2Activity,com.coderqian.chapter3.DialogActivity,com.coderqian.chapter3.ExpandableList2Activity,com.coderqian.chapter3.Launcher2Activity,com.coderqian.chapter3.List2Activity,com.coderqian.chapter3.Preference2Activity",
             "com.coderqian.chapter4.FragmentActivity,com.coderqian.chapter4.Fragment2Activity,com.coderqian.chapter4.IntentActivity,com.coderqian.chapter4.AnimatorActivity",
-            "com.coderqian.chapter5.LeafLoadingActivity", "", "", "", ""};
+            "com.coderqian.chapter5.TweenActivity,com.coderqian.chapter5.LeafLoadingActivity", "", "", "", ""};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
