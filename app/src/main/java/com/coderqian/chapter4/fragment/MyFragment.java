@@ -1,4 +1,4 @@
-package com.coderqian.chapter4;
+package com.coderqian.chapter4.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;

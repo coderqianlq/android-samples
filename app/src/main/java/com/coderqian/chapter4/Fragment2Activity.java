@@ -15,6 +15,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.LinearLayout;
 
 import com.coderqian.R;
+import com.coderqian.chapter4.fragment.ContentFragment;
 
 import java.util.ArrayList;
 import java.util.List;

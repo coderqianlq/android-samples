@@ -1,4 +1,4 @@
-package com.coderqian.chapter4;
+package com.coderqian.chapter4.fragment;
 
 import android.support.v4.app.Fragment;
 import android.graphics.Bitmap;

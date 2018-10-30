@@ -22,7 +22,7 @@
         <item>熟悉Android事件处理机制</item>
         <item>练习Fragment、Intent和各种资源的使用</item>
         <item>实现几种绘图和动画效果</item>
-        <item>暂无</item>
+        <item>建立SQLite数据库和表，封装访问方法</item>
         <item>暂无</item>
         <item>暂无</item>
         <item>暂无</item>
@@ -34,7 +34,7 @@
         <item>熟悉Android事件处理机制、Activity及其子类</item>
         <item>新建一个项目，练习Fragment、Intent和各种资源的使用</item>
         <item>新建一个项目，练习各种资源的使用，并实现几种绘图和动画效果</item>
-        <item>暂无</item>
+        <item>建立一个ContentProvider对该数据库的访问进行封装，并提供访问接口</item>
         <item>暂无</item>
         <item>暂无</item>
         <item>暂无</item>
@@ -49,7 +49,7 @@
             3）向该应用中添加事件处理代码。</item>
         <item>1、参照chapter4、chapter5、chapter6实验手册，完成上机实验。\n2、新建一个项目，练习Fragment、Intent和各种资源的使用。</item>
         <item>1、参照chapter6、chapter7实验手册，完成上机实验。\n2、新建一个项目，练习各种资源的使用，并实现几种绘图和动画效果。</item>
-        <item>暂无</item>
+        <item>1、参照chapter8、chapter9实验手册，完成上机实验。\n2、建立一个SQLite数据库，并建立至少一个表，向表内添加一些数据。建立一个ContentProvider对该数据库的访问进行封装，并提供访问接口。开发一个测试应用，能够通过ContentResolver对前一应用的数据库进行增删改查。</item>
         <item>暂无</item>
         <item>暂无</item>
         <item>暂无</item>

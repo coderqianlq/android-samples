@@ -11,6 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.coderqian.R;
+import com.coderqian.chapter4.fragment.MyFragment;
 
 /**
  * @author qianliqing
