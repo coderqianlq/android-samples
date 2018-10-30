@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp">
 
-        <com.coderqian.chapter5.LeafLoadingView
+        <com.coderqian.chapter5.view.LeafLoadingView
             android:id="@+id/leaf_loading"
             android:layout_width="302dp"
             android:layout_height="61dp"

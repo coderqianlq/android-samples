@@ -193,6 +193,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".chapter6.ResolverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".chapter6.providers.PeopleProvider"
+            android:authorities="com.coderqian.chapter6.providers.PeopleProvider"
+            android:exported="true" />
+
     </application>
 
 </manifest>

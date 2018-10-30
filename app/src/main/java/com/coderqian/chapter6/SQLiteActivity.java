@@ -119,7 +119,7 @@ public class SQLiteActivity extends AppCompatActivity implements Button.OnClickL
         newValues.put("name", people.Name);
         newValues.put("age", people.Age);
         newValues.put("height", people.Height);
-        db.execSQL("create table if not exists " + DB_TABLE + " (ID integer " +
+        db.execSQL("create table if not exists " + DB_TABLE + " (_id integer " +
                 " primary key autoincrement, " +
                 " name varchar(20)," +
                 " age integer," +

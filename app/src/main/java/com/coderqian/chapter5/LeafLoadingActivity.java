@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.coderqian.R;
 import com.coderqian.chapter5.util.AnimationUtils;
+import com.coderqian.chapter5.view.LeafLoadingView;
 
 import java.util.Random;
 

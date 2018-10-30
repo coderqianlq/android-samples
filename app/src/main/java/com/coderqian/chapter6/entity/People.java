@@ -7,7 +7,7 @@ package com.coderqian.chapter6.entity;
  */
 public class People {
 
-    public int ID = -1;
+    public int _id = -1;
     public String Name;
     public int Age;
     public double Height;
@@ -23,7 +23,7 @@ public class People {
 
     public String toString() {
         String result = "";
-        result += "ID: " + this.ID + ",";
+        result += "ID: " + this._id + ",";
         result += "姓名: " + this.Name + ",";
         result += "年龄: " + this.Age + ",";
         result += "身高: " + this.Height + ",";

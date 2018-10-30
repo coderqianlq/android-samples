@@ -1,4 +1,4 @@
-package com.coderqian.chapter5;
+package com.coderqian.chapter5.view;
 
 import android.content.Context;
 import android.content.res.Resources;
