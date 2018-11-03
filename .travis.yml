@@ -1,0 +1,22 @@
+language: android
+jdk: oraclejdk8
+sudo: false
+
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-26.0.2
+    - android-26
+
+  licenses:
+    - 'android-sdk-license-.+'
+
+  notifications:
+    email: false 
+    
+install:
+  - ./gradlew build
+
+script:
+  - ./ciPublish.sh
