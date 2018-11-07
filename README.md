@@ -118,7 +118,7 @@ Android Studio 安装参考菜鸟教程 [Android Studio 安装](http://www.runoo
 
 建立一个SQLite数据库，并建立至少一个表，向表内添加一些数据。建立一个ContentProvider对该数据库的访问进行封装，并提供访问接口。开发一个测试应用，能够通过ContentResolver对前一应用的数据库进行增删改查。
 
-## 6、进程内服务和简易网络聊天室应用
+## 7、进程内服务和简易网络聊天室应用
 
 编程建立一个进程内服务，服务提供int compare(int, int)函数，输入两个整数，输出较大的整数，添加一个Activity，与该Service绑定，并能够调用该Service中的compare函数，显示输出结果。\n3、基于Socket编程实现一个简易网络聊天室应用（包括服务器端和Android客户端）。
 
